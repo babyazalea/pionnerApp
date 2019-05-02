@@ -25,7 +25,7 @@ import Pionner from './Pionner';
   
   _renderMain= () => {
     const articles = this.state.articles.map((article, index) => {
-      console.log(index);
+      console.log(article);
       if(index >= 5){
         return <Pionner title={article.title} url={article.url} key={index} />
       } else{
@@ -51,7 +51,9 @@ import Pionner from './Pionner';
   _loading = () =>{
     return (
       <div className="loading">
-        <img src={person} className="loadingCircle" />
+        <div className="circleBox">
+          <img src={person} className="loadingCircle" />
+        </div>
       </div>
     )
   }
@@ -70,7 +72,7 @@ import Pionner from './Pionner';
                 <div className="headerRight">
                     <div className="toggle">
                     <form>
-                        <input type="range" className="test" onChange={(e)=> console.log(e.currentTarget.value)}></input>
+                        <input type="range" className="switch" onChange={(e)=> console.log(e.currentTarget.value)}></input>
                     </form>
                     </div>    
                 </div>{/* headerRight */}

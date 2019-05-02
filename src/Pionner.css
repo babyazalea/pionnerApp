@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR:300');
+
 *{margin:0; padding:0;}
 a{text-decoration:none; color:inherit;}
 ul, ol{list-style:none;}
@@ -11,6 +13,7 @@ img{vertical-align:top;}
     height:800px;
 }
 
+/* header */
 header{
     width:980px;
     height:100px;
@@ -63,6 +66,7 @@ header{
     border-radius: 50%;
 }
  
+/* main */
 .mainVisual{
     width:960px;
     height:600px;
@@ -134,17 +138,40 @@ header{
     line-height: 1.5;
     padding:30px;
     box-sizing: border-box;
+    font-family: Noto Sans;
+    font-size:0.9rem;
 }
 
+
+/* loading page */
 .loading{
     width:960px;
     height:600px;
     background:url(img/the_expanding_circle_in_person.png) no-repeat center;
+    background-size:350px;
     position: relative;
+    margin:0 auto;
 }
-.loadingCircle{
+.circleBox{
     position: absolute;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
+}
+.loadingCircle{
+    /* position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+    animation:circling 20s linear infinite normal;
+}
+@keyframes circling{
+    0%{
+        transform-origin: center center;
+        transform:rotate(0deg);
+    }
+    100%{
+        transform-origin:center center; 
+        transform:rotate(360deg);
+    }
 }
