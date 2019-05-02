@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
 import './Pionner.css';
+import PropTypes from 'prop-types';
 
     
-
-
-class Pionner extends Component {
-    render(){
-        console.log(this.props)
-        return(
+function Pionner ({title, url}){
+    return(
+        
+        
   
                 <li>
-                    <a href={this.props.url} className="block1 block">
-                        {this.props.title}
+                    <a href={url} className="block">
+                        <p>{title}</p>
                     </a>
                 </li>
             
 
-        )//return
-    }//Component
+       
+    )//retrun
 }//Pionner
 
+/*
+class Pionner extends Component {
+     render(){
+         console.log(this.props)
+         return(
+  
+                 <li>
+                     <a href={this.props.url} className="block">
+                         <p>{this.props.title}</p>
+                     </a>
+                 </li>
+            
+
+         )
+     }
+ }
+*/
 export default Pionner;

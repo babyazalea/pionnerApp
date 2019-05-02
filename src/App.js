@@ -16,13 +16,16 @@ import Pionner from './Pionner';
   state={}
   
   componentDidMount(){
-    this._getArticles();
+    setTimeout(() => {
+      this._getArticles();
+
+    },5000)
   }
   
   _renderMain= () => {
     const articles = this.state.articles.map((article, index) => {
       console.log(index);
-      if(index){
+      if(index >= 5){
         return <Pionner title={article.title} url={article.url} key={index} />
       } else{
       };
