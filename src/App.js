@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './img/pionner_logo.jpg';
+import person from './img/the_expanding_circle.png';
 import Pionner from './Pionner';
 
 
@@ -47,6 +48,14 @@ import Pionner from './Pionner';
     .catch(err => console.log(err))
   }
   
+  _loading = () =>{
+    return (
+      <div className="loading">
+        <img src={person} className="loadingCircle" />
+      </div>
+    )
+  }
+
   render(){
     return (
       <div className="App">
@@ -69,7 +78,7 @@ import Pionner from './Pionner';
             </header>
             <div className="mainVisual">
                 <ul>
-                {this.state.articles ? this._renderMain() : 'LOADING'}
+                {this.state.articles ? this._renderMain() : this._loading()}
                 </ul>
             </div>
         </div>

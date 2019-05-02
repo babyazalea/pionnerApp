@@ -84,49 +84,49 @@ header{
 }
 
 .mainVisual ul li:nth-child(1) a{
-    background:url(img/tec01.png) no-repeat center;
+    /* background:url(img/tec01.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(2) a{
-    background:url(img/tec02.png) no-repeat center;
+    /* background:url(img/tec02.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(3) a{
-    background:url(img/tec03.png) no-repeat center;
+    /* background:url(img/tec03.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(4) a{
-    background:url(img/tec04.png) no-repeat center;
+    /* background:url(img/tec04.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(5) a{
-    background:url(img/tec05.png) no-repeat center;
+    /* background:url(img/tec05.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(6) a{
-    background:url(img/tec06.png) no-repeat center;
+    /* background:url(img/tec06.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(7) a{
-    background:url(img/tec07.png) no-repeat center;
+    /* background:url(img/tec07.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(8) a{
-    background:url(img/tec08.png) no-repeat center;
+    /* background:url(img/tec08.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(9) a{
-    background:url(img/tec09.png) no-repeat center;
+    /* background:url(img/tec09.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(10) a{
-    background:url(img/tec10.png) no-repeat center;
+    /* background:url(img/tec10.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(11) a{
-    background:url(img/tec11.png) no-repeat center;
+    /* background:url(img/tec11.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(12) a{
-    background:url(img/tec12.png) no-repeat center;
+    /* background:url(img/tec12.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(13) a{
-    background:url(img/tec13.png) no-repeat center;
+    /* background:url(img/tec13.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(14) a{
-    background:url(img/tec14.png) no-repeat center;
+    /* background:url(img/tec14.png) no-repeat center; */
 }
 .mainVisual ul li:nth-child(15) a{
-    background:url(img/tec15.png) no-repeat center;
+    /* background:url(img/tec15.png) no-repeat center; */
 }
 
 .mainVisual ul li a p{
@@ -134,4 +134,17 @@ header{
     line-height: 1.5;
     padding:30px;
     box-sizing: border-box;
+}
+
+.loading{
+    width:960px;
+    height:600px;
+    background:url(img/the_expanding_circle_in_person.png) no-repeat center;
+    position: relative;
+}
+.loadingCircle{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
