@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Pionner.css';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
     
 function Pionner ({title, url}){
@@ -37,4 +37,10 @@ class Pionner extends Component {
      }
  }
 */
+
+Pionner.propTypes={
+    title:propTypes.string.isRequired,
+    url:propTypes.string.isRequired
+}
+
 export default Pionner;

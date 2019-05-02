@@ -20,7 +20,7 @@ import Pionner from './Pionner';
     setTimeout(() => {
       this._getArticles();
 
-    },5000)
+    },1000)
   }
   
   _renderMain= () => {
@@ -52,7 +52,7 @@ import Pionner from './Pionner';
     return (
       <div className="loading">
         <div className="circleBox">
-          <img src={person} className="loadingCircle" />
+          <img src={person} alt="loadingImage" className="loadingCircle" />
         </div>
       </div>
     )
@@ -72,7 +72,20 @@ import Pionner from './Pionner';
                 <div className="headerRight">
                     <div className="toggle">
                     <form>
-                        <input type="range" className="switch" onChange={(e)=> console.log(e.currentTarget.value)}></input>
+                        <input type="range" className="switch" onChange={(e)=>
+                          // console.log(e.currentTarget.value);
+                          //console.log(this.state.articles.title)
+                          {
+                          const mediaName=
+                          this.state.articles.map(article => {
+                            return article.source.name
+                          })
+                          
+                          console.log(mediaName)
+                          }
+                        }>
+                        </input>
+                        
                     </form>
                     </div>    
                 </div>{/* headerRight */}
