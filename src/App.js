@@ -26,7 +26,7 @@ import Pionner from './Pionner';
   _renderMain= () => {
     const articles = this.state.articles.map((article, index) => {
       console.log(article);
-      if(index >= 5){
+      if(index < 15){
         return <Pionner title={article.title} url={article.url} key={index} />
       } else{
       };
@@ -76,12 +76,36 @@ import Pionner from './Pionner';
                           // console.log(e.currentTarget.value);
                           //console.log(this.state.articles.title)
                           {
-                          const mediaName=
-                          this.state.articles.map(article => {
-                            return article.source.name
-                          })
+                          const currentValue= e.currentTarget.value;
+                          // const mediaName=
+                          // this.state.articles.map(article => {
+                          //   return article.source.name
+                          // });
+                          const block=document.querySelectorAll('.block>p');
+                          const block_array=Array.prototype.slice.call(block);
+                          const block_mapping=block_array.map(p=> {
+                            return p.innerText
+                          })  
+                          // const pText= block.map(text => {
+                          //   return text.innerText
+                          // });
                           
-                          console.log(mediaName)
+                          
+                          const filterItems = (query) => {
+                            return block_mapping.filter((el) =>
+                              el.toLowerCase().indexOf(query.toLowerCase()) > -1
+                            );
+                          };
+                          if(currentValue <= 50 && currentValue >= 0){
+                            const filtered = filterItems('조선');
+                            console.log(filtered);
+                          } else{
+
+                          }
+                          // console.log(block_mapping);
+                          // console.log(filterItems('조선'));
+                          // console.log(currentValue);
+                          // console.log(mediaName);
                           }
                         }>
                         </input>
