@@ -20,17 +20,30 @@ import Pionner from './Pionner';
     setTimeout(() => {
       this._getArticles();
 
-    },1000)
+    },1000);
+
+    
   }
   
   _renderMain= () => {
     const articles = this.state.articles.map((article, index) => {
       console.log(article);
       if(index < 15){
-        return <Pionner title={article.title} url={article.url} key={index} />
+        return <Pionner title={article.title} url={article.url} name={article.source.name} key={index} />
       } else{
       };
     })
+
+    const toggle=document.querySelector('.switch');
+    
+    toggle.oninput = handlingInput;
+
+    function handlingInput(e){
+      const currentValue = e.target.value;
+      console.log(currentValue);
+    }
+  
+    
     return articles
   }
   
@@ -58,6 +71,8 @@ import Pionner from './Pionner';
     )
   }
 
+  
+
   render(){
     return (
       <div className="App">
@@ -72,45 +87,9 @@ import Pionner from './Pionner';
                 <div className="headerRight">
                     <div className="toggle">
                     <form>
-                        <input type="range" className="switch" onChange={(e)=>
-                          // console.log(e.currentTarget.value);
-                          //console.log(this.state.articles.title)
-                          {
-                          const currentValue= e.currentTarget.value;
-                          const mediaName=
-                          this.state.articles.map(article => {
-                            return article.source.name
-                          });
-                          // const block=document.querySelectorAll('.block>p');
-                          // const block_array=Array.prototype.slice.call(block);
-                          // const block_mapping=block_array.map(p=> {
-                          //   return p.innerText
-                          // })  
-                          // const pText= block.map(text => {
-                          //   return text.innerText
-                          // });
-                          
-                          
-                          const filterItems = (query) => {
-                            return mediaName.filter((el) =>
-                              el.toLowerCase().indexOf(query.toLowerCase()) > -1
-                            );
-                          };
-                          if(currentValue <= 50 && currentValue >= 0){
-                            const filtered = filterItems('chosun');
-                            console.log(filtered);
-                          } else{
-
-                          }
-
-                          // console.log(block_mapping);
-                          // console.log(filterItems('조선'));
-                          // console.log(currentValue);
-                          // console.log(mediaName);
-                          }
-                        }>
-                        </input>
+                        <input type="range" className="switch">
                         
+                        </input>
                     </form>
                     </div>    
                 </div>{/* headerRight */}

@@ -3,14 +3,14 @@ import './Pionner.css';
 import propTypes from 'prop-types';
 
     
-function Pionner ({title, url}){
+function Pionner ({title, url, name}){
     return(
         
         
   
                 <li>
                     <a href={url} className="block">
-                        <p>{title}</p>
+                        <p className={name}>{title}</p>
                     </a>
                 </li>
             
@@ -40,7 +40,8 @@ class Pionner extends Component {
 
 Pionner.propTypes={
     title:propTypes.string.isRequired,
-    url:propTypes.string.isRequired
+    url:propTypes.string.isRequired,
+    name:propTypes.string.isRequired
 }
 
 export default Pionner;
