@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './Pionner.css';
 import propTypes from 'prop-types';
+import { __generator } from 'tslib';
 
-    
+
+
+
 function Pionner ({title, url, name}){
     return(
         

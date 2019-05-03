@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR:300');
+@import url('https://fonts.googleapis.com/css?family=Song+Myung');
+
+@font-face { font-family: 'Hankc'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff'); }
 
 *{margin:0; padding:0;}
 a{text-decoration:none; color:inherit;}
@@ -136,12 +138,19 @@ header{
 .mainVisual ul li a p{
     text-align: justify;
     line-height: 1.5;
-    padding:30px;
+    padding:55px 30px 30px 30px;
     box-sizing: border-box;
-    font-family: Noto Sans;
+    font-family: Hankc;
     font-size:0.9rem;
+    font-weight:300;
+    opacity:1;
+    transition:all 0.5s;
 }
 
+.mainVisual ul li a p.hideLeft1{opacity:0;}
+.mainVisual ul li a p.hideLeft2{opacity:0;}
+.mainVisual ul li a p.hideRight1{opacity:0;}
+.mainVisual ul li a p.hideRight2{opacity:0;}
 
 /* loading page */
 .loading{
@@ -163,7 +172,7 @@ header{
     left:50%;
     top:50%;
     transform: translate(-50%,-50%); */
-    animation:circling 20s linear infinite normal;
+    animation:circling 100s linear infinite normal;
 }
 @keyframes circling{
     0%{
