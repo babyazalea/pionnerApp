@@ -170,6 +170,10 @@ import Pionner from './Pionner';
                 {this.state.articles ? this._renderMain() : this._loading()}
                 </ul>
             </div>
+            <div className="copyright">
+              <a href="https://github.com/babyazalea/pionnerApp">prod. babyazalea</a>
+              <a href="https://newsapi.org/">Thanks to News API</a>
+            </div>
         </div>
         </div>
     );
