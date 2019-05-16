@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/pionnerApp/static/css/main.1903c23a.chunk.css",
+    "main.js": "/pionnerApp/static/js/main.36e0312f.chunk.js",
+    "main.js.map": "/pionnerApp/static/js/main.36e0312f.chunk.js.map",
+    "runtime~main.js": "/pionnerApp/static/js/runtime~main.b1dbe409.js",
+    "runtime~main.js.map": "/pionnerApp/static/js/runtime~main.b1dbe409.js.map",
+    "static/js/2.50ddd0e6.chunk.js": "/pionnerApp/static/js/2.50ddd0e6.chunk.js",
+    "static/js/2.50ddd0e6.chunk.js.map": "/pionnerApp/static/js/2.50ddd0e6.chunk.js.map",
+    "index.html": "/pionnerApp/index.html",
+    "precache-manifest.a0b2c7b3f9af3dc1258fce5b497f0cf4.js": "/pionnerApp/precache-manifest.a0b2c7b3f9af3dc1258fce5b497f0cf4.js",
+    "service-worker.js": "/pionnerApp/service-worker.js",
+    "static/css/main.1903c23a.chunk.css.map": "/pionnerApp/static/css/main.1903c23a.chunk.css.map",
+    "static/media/pionner_logo.jpg": "/pionnerApp/static/media/pionner_logo.9581cc32.jpg",
+    "static/media/the_expanding_circle.png": "/pionnerApp/static/media/the_expanding_circle.2de98754.png"
+  }
+}
