@@ -5,13 +5,7 @@ import person from './img/the_expanding_circle.png';
 import Pionner from './Pionner';
 
 
-// _callApi = () => {
-  //   fetch('https://newsapi.org/v2/top-headlines?country=kr&apiKey=30aba0364ea24b4ebce7366e8d20339d')
-  //   .then(response => response.json())
-  //   .then(json => console.log(json))
-  //   .catch(err => console.log(err))
-  // }
-  
+
   class App extends Component {
  
   state={}
@@ -20,7 +14,7 @@ import Pionner from './Pionner';
     setTimeout(() => {
       this._getArticles();
 
-    },5000);
+    },4000);
     
     
   }
@@ -38,24 +32,8 @@ import Pionner from './Pionner';
     return articles
   }
 
-  _ohYeah = () =>{
-     
-    const toggle=document.querySelector('.switch');
-    const mainVisual=document.querySelector('.mainVisual');
-    toggle.oninput = handlingInput;
-
-    
-    function handlingInput(e){
-      const currentValue = e.target.value;
-      console.log(currentValue);
-      if(currentValue <= 50){
-        }
-       else{
-
-      }
-    }
-  }
   
+
   _getArticles = async () => {
     const articles = await this._callApi()
     this.setState({
@@ -172,6 +150,7 @@ import Pionner from './Pionner';
             </div>
             <div className="copyright">
               <a href="https://github.com/babyazalea/pionnerApp">prod. babyazalea</a>
+              <a href="https://www.instagram.com/sophieharristaylor/?hl=ko">Illustration inspiration Sophie Harris Taylor</a>
               <a href="https://newsapi.org/">Thanks to News API</a>
             </div>
         </div>

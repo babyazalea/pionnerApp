@@ -163,18 +163,27 @@ header{
     width:960px;
     margin:0 auto;
     margin-top:30px;
+    position: relative;
+}
+.copyright a{
     font-family: Suravaram;
     color:rgba(0,0,0,0.7);
     font-size:1.2rem;
+    position:absolute;
+    display: block;
+    letter-spacing: 1px;
 }
 .copyright a:first-child{
-    display:block;
-    float:left;
+    left:0;
+}
+.copyright a:nth-child(2){
+    left:50%;
+    transform:translateX(-50%);
 }
 .copyright a:last-child{
-    display: block;
-    float:right;
+    right:0;    
 }
+    
 
 /* loading page */
 .loading{
