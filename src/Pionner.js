@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Pionner.css';
 import propTypes from 'prop-types';
 import { __generator } from 'tslib';
@@ -19,27 +19,10 @@ function Pionner ({title, url, name}){
             
 
        
-    )//retrun
-}//Pionner
+    )
+}
 
 
-/*
-class Pionner extends Component {
-     render(){
-         console.log(this.props)
-         return(
-  
-                 <li>
-                     <a href={this.props.url} className="block">
-                         <p>{this.props.title}</p>
-                     </a>
-                 </li>
-            
-
-         )
-     }
- }
-*/
 
 Pionner.propTypes={
     title:propTypes.string.isRequired,
