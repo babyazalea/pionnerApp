@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0271fb5771bf6292d7baf1791d32213a",
+    "revision": "13f50139b3444bc5a10f2dc9be88c00c",
     "url": "/pionnerApp/index.html"
   },
   {
-    "revision": "9d68c3bf85a9e928b618",
+    "revision": "95de83239f0bf74bb5a8",
     "url": "/pionnerApp/static/css/main.af45b518.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pionnerApp/static/js/2.13dd7995.chunk.js"
   },
   {
-    "revision": "9d68c3bf85a9e928b618",
-    "url": "/pionnerApp/static/js/main.0114fc85.chunk.js"
+    "revision": "95de83239f0bf74bb5a8",
+    "url": "/pionnerApp/static/js/main.b662f8b8.chunk.js"
   },
   {
     "revision": "264c71e2601b8a7d8188",
