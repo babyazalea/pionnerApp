@@ -13,14 +13,13 @@
     "react-scripts": "^3.4.3"
   },
   "scripts": {
+    "prestart": "npm run build",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "client": "react-scripts start",
     "server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
