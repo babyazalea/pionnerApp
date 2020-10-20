@@ -1,6 +1,6 @@
 # PIONNER APP
 
-> url
+~https://babyazalea.github.io/pionnerApp/~
 
 * React JS 기반의 웹 어플리케이션.
 
@@ -13,7 +13,7 @@
 ***
 
 ## update 2020.10
-- newsapi가 제대로 작동하지 않는 문제로, express 서버를 통해 헤드라인을 받은 뒤 처리하는 방식으로 업데이트 진행
+- newsapi가 제대로 작동하지 않는 문제로, express 서버를 통해 헤드라인을 받은 뒤 처리하는 방식으로 업데이트 진행 중.
 - **안타깝게도, pionner의 철자가 틀렸다는 사실을 깨달음...pioneer인데....**
 
 
