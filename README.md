@@ -1,6 +1,6 @@
 # PIONNER APP
 
-~https://babyazalea.github.io/pionnerApp/~
+https://pionner.herokuapp.com/
 
 * React JS 기반의 웹 어플리케이션.
 
