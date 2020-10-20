@@ -27,9 +27,6 @@ const articles = this.state.articles.map((article, index) => {
   } else{
   };
 });
-
-
-
 return articles
 }
 
