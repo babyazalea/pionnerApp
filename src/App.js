@@ -37,7 +37,7 @@ _getNews = async () =>{
   try{
     const {
       data:{articles}
-    } = await axios.get('http://localhost:3001/news');
+    } = await axios.get('/news');
     this.setState({articles})
   } catch(error){
      console.log(error)
